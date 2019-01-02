@@ -7,7 +7,7 @@ COPY ./MyWeb/package.json /src/app/
 RUN yarn \
 && mkdir /src/logs
 
-COPY ./MyMeb/ /src/app/
+COPY ./MyWeb/ /src/app/
 
 EXPOSE 3000
 

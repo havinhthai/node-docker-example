@@ -2,6 +2,6 @@
 docker stop nodeapp
 docker rm nodeapp
 docker build -t nodeapp .
-docker run --name nodeapp -d -p 80:3000 nodeapp
+docker run --name nodeapp -d -p 3000:3000 nodeapp
 sleep 1
-curl http://localhost
+curl http://127.0.0.1:3000
